@@ -9,6 +9,7 @@ checker = ProxyChecker()
 for i in lines:
     prx = checker.check_proxy(i)
     if prx != False:
-        print(i, prx['anonymity'])
+        print(i, prx['anonymity'], "\nTimeout:", str(prx['timeout']), ("\nCountry:" + prx['country'] + "\n" if prx['country'] != '-' else '\n'))
+
 
 f.close()
