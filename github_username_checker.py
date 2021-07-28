@@ -1,7 +1,5 @@
 import requests
 
-alphabet = "pqrstuvwxyz"
-betbet = "0123456789abcdefghijklmnopqrstuvwxyz"
 f = open("free-github.txt", "a")
 dict = open("dict.txt", "r")
 words = dict.readlines()
